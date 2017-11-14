@@ -13,7 +13,7 @@ class Home extends Component {
             <div>
                 <Navigation />
                 <div className="container">
-                    <h1>Home Page</h1>
+                    <h1>Top Video</h1>
                 </div>
             </div>
         )

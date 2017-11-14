@@ -3,16 +3,17 @@ import logo from './logo.svg';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Home from './containers/Home/Home'
 import Categories from './containers/Categories/Categories'
+import Navigation from './components/Navigation/Navigation'
 import './App.css';
 
 
 const App = () => {
     return(
         <Router>
-            <Switch>
-                <Route path="/" component={Home} />
+            <div>
+                <Route exact path="/" component={Home} />
                 <Route path="/categories" component={Categories} />
-            </Switch>
+            </div>
         </Router>
     )
 }

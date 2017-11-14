@@ -6,7 +6,9 @@ class Categories extends Component {
         return (
             <div>
                 <Navigation />
-                <h1>Catogories</h1>
+                <div className="container">
+                    <h1>Catogories</h1>
+                </div>
             </div>
         )
     }
