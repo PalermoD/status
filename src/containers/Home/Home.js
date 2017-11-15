@@ -14,19 +14,17 @@ class Home extends Component {
             <div>
                 <Navigation />
                 <div className="col-md-12">
-                    <div className="row">
-                        <div className="col-md-7 top-video">
-                            <div className="col-md-12">
-                                <h1>Top Video</h1>
-                                <div>
-                                    <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
-                                </div>
-                                <h2>Test Text</h2>
+                    <div className="col-md-7 top-video">
+                        <div className="col-md-12">
+                            <h1>Top Video</h1>
+                            <div>
+                                <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
                             </div>
+                            <h2>Test Text</h2>
                         </div>
-                        <div className="col-md-4 video-feed-container">
-                            <VideoFeed />
-                        </div>
+                    </div>
+                    <div className="col-md-4 video-feed-container">
+                        <VideoFeed />
                     </div>
                 </div>
             </div>
