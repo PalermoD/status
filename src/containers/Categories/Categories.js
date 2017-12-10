@@ -5,7 +5,7 @@ class Categories extends Component {
     render(){
         return (
             <div>
-                <Navigation />
+
                 <div className="container">
                     <h1>Catogories</h1>
                 </div>

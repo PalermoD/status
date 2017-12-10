@@ -11,6 +11,7 @@ const App = () => {
     return(
         <Router>
             <div>
+                <Navigation />
                 <Route exact path="/" component={Home} />
                 <Route path="/categories" component={Categories} />
             </div>

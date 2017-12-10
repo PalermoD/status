@@ -13,18 +13,22 @@ class VideoFeed extends Component {
                     <h2>Video Feed</h2>
                     <div className="video">
                         <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
+                        <h4>Starwars meets paint</h4>
                     </div>
                     <hr/>
                     <div className="video">
                         <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
+                        <h4>Starwars meets paint</h4>
                     </div>
                     <hr/>
                     <div className="video">
                         <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
+                        <h4>Starwars meets paint</h4>
                     </div>
                     <hr/>
                     <div className="video">
                         <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
+                        <h4>Starwars meets paint</h4>
                     </div>
                     <hr/>
                 </div>

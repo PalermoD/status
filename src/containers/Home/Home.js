@@ -12,11 +12,11 @@ class Home extends Component {
     render(){
         return (
             <div>
-                <Navigation />
+
                 <div className="col-md-12">
                     <div className="col-md-7 top-video">
                         <div className="col-md-12">
-                            <h1>Top Video</h1>
+                            <h1>Top Video Palermo</h1>
                             <div>
                                 <img alt="" className="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61hGibmhRgL.jpg"/>
                             </div>

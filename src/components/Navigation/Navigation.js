@@ -20,7 +20,7 @@ class Navigation extends Component {
     render(){
         return (
             <div>
-                <Navbar inverse collapseOnSelect>
+                <Navbar inverse collapseOnSelect fixedTop>
                     <Navbar.Header>
                         <LinkContainer to="/">
                             <Navbar.Brand>
@@ -43,6 +43,7 @@ class Navigation extends Component {
                         <LinkContainer to="/categories">
                             <NavItem eventKey={1}>Categories</NavItem>
                         </LinkContainer>
+                        <NavItem eventKey={1} href="#">Dashboard</NavItem>
                         <NavItem eventKey={1} href="#">Notifications</NavItem>
                         <NavItem eventKey={2} href="#">Login</NavItem>
                     </Nav>
