@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Home from './containers/Home/Home'
 import Categories from './containers/Categories/Categories'
 import Navigation from './components/Navigation/Navigation'
+import Signin from './components/Auth/signin'
 import './App.css';
 
 
@@ -13,7 +13,8 @@ const App = () => {
             <div>
                 <Navigation />
                 <Route exact path="/" component={Home} />
-                <Route path="/categories" component={Categories} />
+                <Route exact path="/categories" component={Categories} />
+                <Route exact path="/signin" component={Signin} />
             </div>
         </Router>
     )

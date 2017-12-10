@@ -16,7 +16,6 @@ class Navigation extends Component {
 
     componentWillMount(){}
 
-
     render(){
         return (
             <div>
@@ -43,7 +42,11 @@ class Navigation extends Component {
                         <LinkContainer to="/categories">
                             <NavItem eventKey={1}>Categories</NavItem>
                         </LinkContainer>
-                        <NavItem eventKey={1} href="#">Dashboard</NavItem>
+
+                        <LinkContainer to="/signin">
+                            <NavItem eventKey={1} >Login</NavItem>
+                        </LinkContainer>
+
                         <NavItem eventKey={1} href="#">Notifications</NavItem>
                         <NavItem eventKey={2} href="#">Login</NavItem>
                     </Nav>
