@@ -18,7 +18,7 @@ class Navigation extends Component {
 
     render(){
         return (
-            <div>
+
                 <Navbar inverse collapseOnSelect fixedTop>
                     <Navbar.Header>
                         <LinkContainer to="/">
@@ -29,30 +29,20 @@ class Navigation extends Component {
                         <Navbar.Toggle />
                     </Navbar.Header>
                     <Navbar.Collapse>
-                    <Nav>
-                        <Navbar.Form pullLeft>
-                            <FormGroup>
-                              <FormControl type="text" placeholder="Search" />
-                            </FormGroup>
-                            {' '}
-                            <Button type="submit">Submit</Button>
-                        </Navbar.Form>
-                    </Nav>
-                    <Nav pullRight>
-                        <LinkContainer to="/categories">
-                            <NavItem eventKey={1}>Categories</NavItem>
-                        </LinkContainer>
+                        <Nav pullRight>
+                            <LinkContainer to="/categories">
+                                <NavItem eventKey={1}>Categories</NavItem>
+                            </LinkContainer>
 
-                        <LinkContainer to="/signin">
-                            <NavItem eventKey={1} >Login</NavItem>
-                        </LinkContainer>
+                            <NavItem eventKey={1} href="#">Notifications</NavItem>
 
-                        <NavItem eventKey={1} href="#">Notifications</NavItem>
-                        <NavItem eventKey={2} href="#">Login</NavItem>
-                    </Nav>
+                            <LinkContainer to="/signin">
+                                <NavItem eventKey={1} >Login</NavItem>
+                            </LinkContainer>
+                        </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-            </div>
+
         )
     }
 }
