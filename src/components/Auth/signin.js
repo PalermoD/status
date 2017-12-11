@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {reduxForm, Field} from 'redux-form'
 import {signinUser} from '../../redux/actions/auth_actions'
+import {withRouter} from "react-router-dom";
 
 
 class Signin extends Component {
@@ -12,7 +13,7 @@ class Signin extends Component {
 
     handleFormSubmit({email, password}){
         console.log(email, password)
-        signinUser({email, password})
+        signinUser(this.props.history, {email, password})
     }
 
     render(){
@@ -37,7 +38,7 @@ class Signin extends Component {
     }
 }
 
-export default reduxForm({
+export default withRouter(reduxForm({
     form: 'signin',
     fields: ['email', 'password']
-}, null, signinUser)(Signin)
+}, null, signinUser)(Signin))
