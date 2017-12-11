@@ -12,7 +12,7 @@ class Signin extends Component {
     }
 
     handleFormSubmit({email, password}){
-        console.log(email, password)
+        console.log({email, password})
         signinUser(this.props.history, {email, password})
     }
 
