@@ -11,5 +11,6 @@ import { createStore, applyMiddleware } from 'redux';
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
+
 ReactDOM.render(<Provider store={createStoreWithMiddleware(reducers)}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
